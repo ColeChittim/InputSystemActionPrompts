@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -426,7 +426,7 @@ namespace InputSystemActionPrompts
         /// <summary>
         /// Builds internal map of all actions (eg "Player/Jump" to available binding paths (eg "Gamepad/ButtonSouth")
         /// </summary>
-        private static void BuildBindingMaps()
+        public static void BuildBindingMaps()
         {
             s_ActionBindingMap = new Dictionary<string, List<ActionBindingMapEntry>>();
             
